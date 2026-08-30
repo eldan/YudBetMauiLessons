@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Lesson_06_Collections.Views.InsturmentList"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="InsturmentList"
+    BackgroundColor="White">
+    <VerticalStackLayout>
+        <Label
+            HorizontalOptions="Center"
+            Text="Instument List"
+            VerticalOptions="Center" />
+        <VerticalStackLayout x:Name="listInstruments">
+            <HorizontalStackLayout Spacing="10">
+                <Label Text="clarinet" VerticalOptions="Center" />
+                <Label Text="wind" VerticalOptions="Center" />
+                <Image
+                    Aspect="AspectFill"
+                    Source="synth.jpg"
+                    VerticalOptions="Center"
+                    WidthRequest="50" />
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

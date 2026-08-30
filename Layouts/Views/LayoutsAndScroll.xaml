@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Layouts.Views.LayoutsAndScroll"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="LayoutsAndScroll">
+    <VerticalStackLayout Spacing="10">
+        <Label Text="This is a scroll inside Layout" />
+        <ScrollView BackgroundColor="Orange" HeightRequest="150">
+            <VerticalStackLayout Padding="30,0" Spacing="25">
+                <Image
+                    Aspect="AspectFit"
+                    HeightRequest="185"
+                    SemanticProperties.Description="dot net bot in a hovercraft number nine"
+                    Source="dotnet_bot.png" />
+                <Label
+                    SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                    SemanticProperties.HeadingLevel="Level2"
+                    Style="{StaticResource SubHeadline}"
+                    Text="Welcome to &#10;.NET Multi-platform App UI" />
+
+                <Button
+                    x:Name="CounterBtn"
+                    HorizontalOptions="Fill"
+                    SemanticProperties.Hint="Counts the number of times you click"
+                    Text="Click me" />
+            </VerticalStackLayout>
+        </ScrollView>
+        <Label Text="Horizontal Stack Layout" />
+        <ScrollView Orientation="Horizontal">
+            <HorizontalStackLayout BackgroundColor="Beige" Spacing="5">
+                <Button
+                    HeightRequest="100"
+                    Text="1"
+                    WidthRequest="100" />
+                <Button
+                    HeightRequest="100"
+                    Text="2"
+                    WidthRequest="100" />
+                <Button
+                    HeightRequest="100"
+                    Text="3"
+                    WidthRequest="100" />
+                <Button
+                    HeightRequest="100"
+                    Text="4"
+                    WidthRequest="100" />
+                <Button
+                    HeightRequest="100"
+                    Text="5"
+                    WidthRequest="100" />
+            </HorizontalStackLayout>
+        </ScrollView>
+        <Label Text="Flex Layout" />
+        <FlexLayout
+            Background="Blue"
+            JustifyContent="SpaceAround"
+            Wrap="Wrap">
+            <Button
+                HeightRequest="100"
+                Text="1"
+                WidthRequest="100" />
+            <Button
+                HeightRequest="100"
+                Text="2"
+                WidthRequest="100" />
+            <Button
+                HeightRequest="100"
+                Text="3"
+                WidthRequest="100" />
+            <Button
+                HeightRequest="100"
+                Text="4"
+                WidthRequest="100" />
+            <Button
+                HeightRequest="100"
+                Text="5"
+                WidthRequest="100" />
+        </FlexLayout>
+        <Label Text="Vertical Stack Layout" />
+        <ScrollView HeightRequest="120">
+            <VerticalStackLayout BackgroundColor="Green">
+                <Button
+                    HeightRequest="100"
+                    Text="1"
+                    WidthRequest="100" />
+                <Button
+                    HeightRequest="100"
+                    Text="2"
+                    WidthRequest="100" />
+                <Button
+                    HeightRequest="100"
+                    Text="3"
+                    WidthRequest="100" />
+                <Button
+                    HeightRequest="100"
+                    Text="4"
+                    WidthRequest="100" />
+                <Button
+                    HeightRequest="100"
+                    Text="5"
+                    WidthRequest="100" />
+            </VerticalStackLayout>
+        </ScrollView>
+    </VerticalStackLayout>
+</ContentPage>

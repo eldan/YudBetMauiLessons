@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Lesson_04_ExerciseUIandUIwithCode.Views.CalculateAgeWithCandlesPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="CalculateAgeWithCandlesPage">
+    <Grid
+        Margin="10"
+        FlowDirection="RightToLeft"
+        RowDefinitions="*,*">
+        <VerticalStackLayout Grid.Row="0">
+            <Label
+                x:Name="lblSentence"
+                HorizontalOptions="Fill"
+                Text="ממתין..."
+                TextColor="YellowGreen"
+                VerticalOptions="Start" />
+            <FlexLayout
+                x:Name="candleHolder"
+                JustifyContent="SpaceAround"
+                Wrap="Wrap">
+                <Image
+                    Aspect="AspectFit"
+                    HeightRequest="200"
+                    Source="candle.png" />
+                <Image
+                    Aspect="AspectFit"
+                    HeightRequest="200"
+                    Source="candle.png" />
+            </FlexLayout>
+        </VerticalStackLayout>
+        <VerticalStackLayout
+            x:Name="layoutFields"
+            Grid.Row="1"
+            BackgroundColor="Gray"
+            HorizontalOptions="Fill"
+            VerticalOptions="End">
+            <Label FontSize="Large" Text="שם:" />
+            <Entry x:Name="entryName" Keyboard="Numeric" />
+            <Label FontSize="Large" Text="גיל:" />
+            <Entry x:Name="entryBirthYear" Keyboard="Numeric" />
+
+        </VerticalStackLayout>
+    </Grid>
+
+
+</ContentPage>

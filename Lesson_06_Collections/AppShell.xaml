@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Lesson_06_Collections.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Lesson_06_Collections.Views"
+    Title="Lesson_06_Collections">
+
+    <ShellContent
+        Title="Insturment List"
+        ContentTemplate="{DataTemplate local:InsturmentList}"
+        Route="InsturmentList" />
+
+</Shell>
