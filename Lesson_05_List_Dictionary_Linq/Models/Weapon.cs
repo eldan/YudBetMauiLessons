@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lesson_05_List_Dictionary_Linq.Models
 {
-  internal class Weapon
+  class Weapon
   {
     public string Name { get; set; }
     public int Damage { get; set; }

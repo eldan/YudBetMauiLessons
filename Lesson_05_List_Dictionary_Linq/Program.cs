@@ -34,7 +34,7 @@ namespace Lesson_05_List_Dictionary_Linq
       */
 
       #region List<User>
-      /*
+      
       List<User> users = new List<User>();
       users.Add(new User()
       {
@@ -89,10 +89,10 @@ namespace Lesson_05_List_Dictionary_Linq
       // search for someone
       string searchStr = Console.ReadLine();
       var results = users.FindAll(x => x.Email.Contains(searchStr));
-      Console.WriteLine(results.Count);
+      //Console.WriteLine(results.Count);
 
       results = users.FindAll(x => x.Email.Equals(searchStr));
-      Console.WriteLine(results.Count);
+      //Console.WriteLine(results.Count);
 
       // Language Integrated Query (LINQ) - C#
       results = users
@@ -101,43 +101,46 @@ namespace Lesson_05_List_Dictionary_Linq
 
       PrintListOfUsers(results);
      
-      */
+      
       #endregion
 
 
       #region Dictionary
-      Dictionary<string, Weapon> weapons = new Dictionary<string, Weapon>
-      {
-          {
-              "pistol",
-              new Weapon
-              {
-                  Name = "Pistol",
-                  Damage = 20,
-                  Ammo = 12
-              }
-          },
-          {
-              "rifle",
-              new Weapon
-              {
-                  Name = "Rifle",
-                  Damage = 40,
-                  Ammo = 30
-              }
-          },
-          {
-              "shotgun",
-              new Weapon
-              {
-                  Name = "Shotgun",
-                  Damage = 80,
-                  Ammo = 8
-              }
-          }   
-      };
-      Console.WriteLine(weapons["shotgun"].Damage);
+      //Dictionary<string, Weapon> weapons = new Dictionary<string, Weapon>
+      //{
+      //    {
+      //        "pistol",
+      //        new Weapon
+      //        {
+      //            Name = "Pistol",
+      //            Damage = 20,
+      //            Ammo = 12
+      //        }
+      //    },
+      //    {
+      //        "rifle",
+      //        new Weapon
+      //        {
+      //            Name = "Rifle",
+      //            Damage = 40,
+      //            Ammo = 30
+      //        }
+      //    },
+      //    {
+      //        "shotgun",
+      //        new Weapon
+      //        {
+      //            Name = "Shotgun",
+      //            Damage = 80,
+      //            Ammo = 8
+      //        }
+      //    }   
+      //};
+      //Console.WriteLine(weapons["shotgun"].Damage);
       #endregion
+
+
+
 
     }
     static void PrintListOfString(List<string> lst)
